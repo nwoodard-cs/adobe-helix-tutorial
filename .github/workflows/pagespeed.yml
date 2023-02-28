@@ -9,6 +9,6 @@ jobs:
         uses: jakepartusch/psi-action@v1.3
         id: psi
         with:
-          url: "https://jake.partus.ch"
+          url: "https://main--adobe-helix-tutorial--nwoodard-cs.hlx.page/"
           threshold: 70
           strategy: mobile
