@@ -1,2 +1,14 @@
-- name: Page Speed Insights
-  uses: JakePartusch/psi-action@v1.3
+name: PageSpeed
+run-name: ${{ github.actor }} is running a PageSpeed test 🚀
+on: [push]
+jobs:
+  Run-Page-Speed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Page Speed Insights
+        uses: jakepartusch/psi-action@v1.3
+        id: psi
+        with:
+          url: "https://jake.partus.ch"
+          threshold: 70
+          strategy: mobile
